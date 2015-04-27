@@ -1,5 +1,8 @@
 Template.entity.helpers({
 
+  entity: function(){
+    return Entity.find({});
+  }
 
 });
 
@@ -16,15 +19,13 @@ Template.entity.events({
       categories: []
     };
 
-    function getCategories(){
       _.map(e.target, function(e){ e.type=='checkbox' && e.checked ? entity.categories.push(e.value) : "false" });
-    }
 
-    getCategories();
+    console.log(entity)
 
     if(entity.name != ""){
       Meteor.call("insertEntity", entity, function(err,res){
-       console.log(arguments)
+       console.log(err,res)
       });
 
     } else {
@@ -41,6 +42,20 @@ Template.entity.events({
     Meteor.call('entitySearch', 'Haiti', entities, function(err,res){
       console.log('entitySearch',err,res);
     })
+
+  },
+
+  'click #entityEdit': function(){
+    console.log(this, _.contains(this.categories, "place"));
+
+    $('#entityForm').trigger("reset");
+
+    $('#entityName').val(this.name);
+    $('#entityDescription').val(this.description);
+
+    _.contains(this.categories, "place") ? document.getElementById('check-place').checked = true : document.getElementById('check-place').checked = false;
+    _.contains(this.categories, "ngo") ? document.getElementById('check-ngo').checked = true : document.getElementById('check-place').checked = false;
+    _.contains(this.categories, "person") ? document.getElementById('check-person').checked = true : document.getElementById('check-place').checked = false;
 
   }
 

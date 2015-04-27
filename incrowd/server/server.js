@@ -247,9 +247,10 @@ Meteor.methods({
   },
 
   insertEntity: function(e){
-    var res;
-    return Entity.upsert({'name' : e.name}, e, function(){
-     return arguments
+    console.log('e:',e)
+    Entity.upsert({'name' : e.name}, e, function(err, res){
+     console.log(err,res);
+      return res;
     });
 
   }, // insertEntity

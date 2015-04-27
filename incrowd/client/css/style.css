@@ -158,3 +158,17 @@ body {
     margin-bottom: 5px;
     pointer-events: auto;
 }
+
+/* ENTITY */
+
+.entity-title{
+    float: left;
+}
+
+.entity-block p {
+    clear: both;
+}
+
+.entity-block-icons {
+    /*text-align: right;*/
+}
