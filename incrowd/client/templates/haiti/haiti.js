@@ -2,6 +2,7 @@
 Template.haiti.helpers({
 
   posts: function(){
+    if(!Meteor.userId()) return null;
     return Haiti.find({});
   },
 

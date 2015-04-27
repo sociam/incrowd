@@ -1,6 +1,7 @@
 Template.entity.helpers({
 
   entity: function(){
+    if(!this.userId) return null;
     return Entity.find({});
   }
 
