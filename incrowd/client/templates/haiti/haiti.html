@@ -1,0 +1,42 @@
+<template name="haiti">
+
+    <div class="row post">
+        <div class="col-md-12">
+            {{> highchartsHelper chartId="test" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" id="left">
+            <div class="post">
+                <h3>Entities</h3>
+                <p><a id="entity-search" class="btn btn-info btn-sm"> Search All Haiti for Entities </a></p>
+
+                <ul>
+                    {{#each contentMatch}}
+                        <li>{{entity}}</li>
+                    {{/each}}
+                </ul>
+            </div>
+
+            <div class="post">
+                {{>langDist}}
+            </div>
+        </div>
+
+        <div class="col-md-8" id="right">
+            {{#each posts}}
+                <div class="post">
+                    <div class="post-content">
+                        <h3><a href="#">{{summary}}</a><span>{{content}}</span></h3>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+    <!--<div class="row">-->
+
+    <!--</div>-->
+
+</template>

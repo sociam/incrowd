@@ -1,3 +1,8 @@
 {
-  
+  "natural": "0.2.1",
+  "to-csv": "0.0.3",
+  "franc": "1.0.1",
+  "languagedetect": "1.1.0",
+  "pos": "0.1.9",
+  "nlp_compromise":"0.3.9"
 }
