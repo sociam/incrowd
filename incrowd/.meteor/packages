@@ -5,5 +5,20 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
+twbs:bootstrap
+underscore
+meteorhacks:npm
+
+
+npm-container
+http
+iron:router
+pfafman:filesaver
+d3js:d3
+mfpierre:chartist-js
+sacha:spin
+momentjs:moment
+nvd3:nvd3
+maazalik:highcharts
+jhuenges:highstock
+mrt:highlight
