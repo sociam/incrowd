@@ -13,7 +13,7 @@ Meteor.methods({
 
     console.log('search called');
 
-    var url = 'http://api.crisis.net/item?apikey=551e535115f7e75a51092146';
+    var url = 'http://api.crisis.net/item?apikey=' + apiCredentials.crisisnet.key;
 
     var data = HTTP.get(url, options);
 

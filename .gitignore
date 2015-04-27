@@ -1,2 +1,4 @@
 .meteor/local
 .meteor/meteorite
+
+incrowd/private/apiCredentials.js
