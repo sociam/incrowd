@@ -10,7 +10,11 @@ Template.haiti.helpers({
     return Session.get('contentEntityMatch');
   },
 
-  topGenresChart : function(){
+  test: function(){
+    console.log('test helper called');
+  },
+
+  timeColumnChart : function(){
 
     var chartData = [];
 
@@ -20,15 +24,15 @@ Template.haiti.helpers({
       .countBy(function(d){return moment(d.createdAt).format("YYYY-MM-DD hh")})
       .value();
 
-    console.log(grouped);
+    //console.log(grouped);
 
     var a = Object.keys(grouped).forEach(function(key){
       chartData.push([parseInt(moment(key).unix() * 1000), grouped[key]]);
     });
-    console.log(chartData[0]);
+    //console.log(chartData[0]);
 
     var data = _.sortBy(chartData, function(n){ return n[0] });
-    console.log(data[0]);
+    //console.log(data[0]);
 
     return {
       chart: {
@@ -55,10 +59,18 @@ Template.haiti.helpers({
 
       series: [{
         data: data,
-        type:'column'
+        type:'column',
+        cursor: 'pointer',
+        point: {
+          events: {
+            click: function (e) {
+              Session.set('filter.time', moment(this.x).format() );
+              console.log(this, this.x, this.y);
+            }
+          }
+        }
       }]
     };  //return
-
 
   } // rendered function
 
@@ -87,7 +99,10 @@ Template.haiti.events({
       Session.set('summaryEntityMatch', res.matchSummary);
     })
 
+  },
+
+  'click': function(e){
+    console.log('clicked timeColumnChart', e, arguments)
   }
 
 });
-
