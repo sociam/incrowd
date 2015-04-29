@@ -2,16 +2,32 @@
 Template.haiti.helpers({
 
   posts: function(){
+    var s = Session.get('filter.time');
     if(!Meteor.userId()) return null;
-    return Haiti.find({});
+
+    if(s){
+
+      var x = Haiti.find({"createdAt" : {
+        $lte: moment(Session.get('filter.time')).add('1','d').format("YYYY-MM-DD"),
+        $gt: moment(Session.get('filter.time')).subtract('1','d').format("YYYY-MM-DD")
+      }}).fetch()
+
+      Session.set('dataset', x);
+
+    } else {
+
+      var x = Haiti.find({});
+
+      Session.set('dataset', x);
+
+    }
+
+    return Session.get('dataset');
+
   },
 
   contentMatch: function(){
     return Session.get('contentEntityMatch');
-  },
-
-  test: function(){
-    console.log('test helper called');
   },
 
   timeColumnChart : function(){
@@ -64,7 +80,7 @@ Template.haiti.helpers({
         point: {
           events: {
             click: function (e) {
-              Session.set('filter.time', moment(this.x).format() );
+              Session.set('filter.time', moment(this.x).format('YYYY-MM-DD') );
               console.log(this, this.x, this.y);
             }
           }

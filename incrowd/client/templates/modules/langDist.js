@@ -4,7 +4,7 @@ Template.langDist.helpers({
 
   languages: function(){
 
-    var data = Haiti.find({}).fetch();
+    var data = Session.get('dataset') || Haiti.find({}).fetch();
 
     var result = [];
 
@@ -14,9 +14,11 @@ Template.langDist.helpers({
 
     var e = _.chain(data).countBy(function(d){ return d.langCode} ).value();
 
-    for ( k in e){
+    for (k in e){
         result.push({ name: k , value: e[k]})
     }
+
+    console.log(result);
 
     return result;
 
