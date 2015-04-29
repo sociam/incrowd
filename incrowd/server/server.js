@@ -292,7 +292,42 @@ Meteor.methods({
 
     return { matchContent: matchContent , matchSummary: matchSummary, content: matchContent.length, summary: matchSummary.length };
 
-  } // entitySearch
+  }, // entitySearch
 
+  entityTextSearch: function(data){
+    var matchContent = [],
+      matchSummary = [],
+      entList = [];
+
+    var entities = Entity.find({}).fetch();
+
+    // get the db
+    var data = data;
+
+    // get list of entities
+    entities.forEach(function(e){
+      entList.push(e.name);
+    });
+
+    data.forEach(function(d){
+      for(ent in entList){
+        d.content.search(entList[ent]) >= 0 ? matchContent.push({ id: d._id, entity: entList[ent]}) : false;
+        d.summary.search(entList[ent]) >= 0 ? matchSummary.push({ id: d._id, entity: entList[ent]}) : false;
+      }
+    });
+
+    // check each in the db for entities
+    //data.forEach(function(d){
+    //  for(ent in entList){
+    //    var a = Haiti.find({$text:{$search: entList[ent] }}).fetch();
+    //    if(a.length > 0) { matchContent.push(a) }
+    //  }
+    //});
+
+    //return { matchContent: matchContent , matchSummary: matchSummary, content: matchContent.length, summary: matchSummary.length };
+
+    return { data: data , matchContent: matchContent, matchSummary: matchSummary } ;
+
+  } // entityTextSearch
 
 });
