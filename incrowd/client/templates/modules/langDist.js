@@ -4,7 +4,10 @@ Template.langDist.helpers({
 
   languages: function(){
 
-    var data = Session.get('dataset') || Haiti.find({}).fetch();
+    var data = Session.get('dataset');
+
+    //clear out all the language filters
+    Session.set('filter.language', undefined);
 
     var result = [];
 
@@ -18,63 +21,109 @@ Template.langDist.helpers({
         result.push({ name: k , value: e[k]})
     }
 
-    console.log(result);
-
     return result;
+
+  },
+
+  filterToggle: function(){
+
+    var langs = Session.get('filter.language');
+
+    if(!_.contains(langs, this.name)){
+      return true
+    } else {
+      return false
+    }
 
   },
 
   topGenresChart : function(){
 
-    var chartData = [];
+    var data = Session.get('dataset');
 
-    var haiti = Haiti.find({}).fetch();
+    var result = [];
 
-    var grouped = _.chain(haiti)
-      .countBy(function(d){return moment(d.createdAt).format("YYYY-MM-DD hh")})
-      .value();
-
-    console.log(grouped);
-
-    var a = Object.keys(grouped).forEach(function(key){
-      chartData.push([parseInt(moment(key).unix() * 1000), grouped[key]]);
+    var d = _.filter(data, function(obj) {
+      return _.has(obj, 'language') ? obj['langCode'] = obj.language.code : obj['langCode'] = 'none';
     });
-    console.log(chartData[0]);
 
-    var data = _.sortBy(chartData, function(n){ return n[0] });
-    console.log(data[0]);
+    var e = _.chain(data).countBy(function(d){ return d.langCode} ).value();
+
+    for (k in e){
+      result.push({ name: k , y: e[k]}) // highcharts expects a 'y' key and a 'name' key
+    }
+
+    //console.log('language data',result);
 
     return {
       chart: {
-        width: 350,
-        height: 100,
-        type: 'areaspline'
+        type: 'bar',
+        height: (result.length * 100) / 1.5
       },
-      tooltip: {
-        pointFormat: "Value: {point.y:,.1f}"
-      },
-      title: {
-        text: 'Posts by Volume and Time'
-      },
-      legend: {
-        enabled: false
-      },
+
       xAxis: {
-        type: 'datetime',
-        labels:{
-          format: '{value:%d/%m %H}',
-          align: 'center'
+        categories: function(){ return result.forEach(function(d){d.name;})},
+        labels: {
+          style: {
+            fontSize: '11px',
+            fontFamily: 'Verdana, sans-serif'
+          }
         }
       },
 
       series: [{
-        data: data,
-        type:'column'
-      }]
+        data: result
+      }],
+      dataLabels: {
+        enabled: true,
+        //rotation: -90,
+        color: '#000',
+        align: 'right',
+        format: '{point.y:.1f}', // one decimal
+        y: 10, // 10 pixels down from the top
+        style: {
+          fontSize: '13px',
+          fontFamily: 'Verdana, sans-serif'
+        }
+      }
     };  //return
 
 
-  } // rendered function
+  } // chart function
 
 });
 
+Template.langDist.events({
+
+  'click .filter-language': function(e){
+    e.preventDefault();
+
+    if(Session.get('filter.language') != undefined){
+
+      var langs = Session.get('filter.language');
+
+      // if the filter is on
+      if(_.contains(langs, this.name)){
+
+        // switch the filter off
+        console.log('removing', this.name, _.without(langs, this.name));
+        Session.set('filter.language',_.without(langs, this.name));
+        //return _.without(langs, this.name);
+
+      } else {
+        langs.push(this.name);
+        Session.set('filter.language', langs);
+      }
+
+    } else {
+
+      var arr = [this.name];
+
+      Session.set('filter.language' , arr);
+
+    }
+
+
+  }
+
+});

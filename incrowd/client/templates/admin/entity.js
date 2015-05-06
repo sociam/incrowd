@@ -1,7 +1,7 @@
 Template.entity.helpers({
 
   entity: function(){
-    if(!this.userId) return null;
+    //if(!this.userId) return null;
     return Entity.find({});
   }
 
@@ -22,7 +22,7 @@ Template.entity.events({
 
       _.map(e.target, function(e){ e.type=='checkbox' && e.checked ? entity.categories.push(e.value) : "false" });
 
-    console.log(entity)
+    console.log(entity);
 
     if(entity.name != ""){
       Meteor.call("insertEntity", entity, function(err,res){

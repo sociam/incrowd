@@ -1,0 +1,19 @@
+<template name="entityBlock">
+    <h3>Entities</h3>
+    <p><a id="entity-search" class="btn btn-info btn-sm"> Search All Haiti for Entities </a></p>
+
+    <ul>
+        {{#each contentMatch}}
+            <li>{{entity}}</li>
+        {{/each}}
+    </ul>
+
+    <form id="entityBlockForm">
+
+        <div class="form-group">
+            <label for="{{entity}}">Entity Name</label>
+            <input type="text" class="form-control" id="{{entity}}" name="name" placeholder="Enter entity name">
+        </div>
+
+    </form>
+</template>

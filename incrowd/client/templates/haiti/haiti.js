@@ -2,35 +2,31 @@
 Template.haiti.helpers({
 
   posts: function(){
+
     var s = Session.get('filter.time');
-    if(!Meteor.userId()) return null;
 
-    if(s){
-
+    if(s != undefined){
+      console.log(s, "is undefined")
       var x = Haiti.find({"createdAt" : {
         $lte: moment(Session.get('filter.time')).add('1','d').format("YYYY-MM-DD"),
         $gt: moment(Session.get('filter.time')).subtract('1','d').format("YYYY-MM-DD")
-      }}).fetch()
+      }}).fetch();
 
       Session.set('dataset', x);
 
     } else {
 
-      var x = Haiti.find({});
+      var x = Haiti.find().fetch();
 
       Session.set('dataset', x);
 
     }
 
-    return Session.get('dataset');
+    return x;
 
   },
 
-  contentMatch: function(){
-    return Session.get('contentEntityMatch');
-  },
-
-  timeColumnChart : function(){
+   timeColumnChart : function(){
 
     var chartData = [];
 
@@ -104,29 +100,9 @@ Template.haiti.events({
     Meteor.call('pos', this.description)
   },
 
-  'click #entity-search': function(){
 
-    //var entities = Entity.find({}).fetch();
-    //console.log(entities);
-
-    //Meteor.call('entitySearch', 'Haiti', entities, function(err,res){
-    //  console.log('entitySearch',err,res);
-    //  Session.set('contentEntityMatch', res.matchContent);
-    //  Session.set('summaryEntityMatch', res.matchSummary);
-    //})
-
-    Meteor.call('entityTextSearch', Session.get('dataset'), function(err,res){
-      console.log('entitySearch',err,res);
-      Session.set('contentEntityMatch', res.matchContent);
-      Session.set('summaryEntityMatch', res.matchSummary);
-    })
-
-
-
-  },
-
-  'click': function(e){
-    console.log('clicked timeColumnChart', e, arguments)
-  }
+  //'click': function(e){
+  //  console.log('clicked timeColumnChart', e, arguments)
+  //}
 
 });

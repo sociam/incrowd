@@ -2,3 +2,5 @@
 .meteor/meteorite
 
 incrowd/private/apiCredentials.js
+
+incrowd/server/kadira.js
