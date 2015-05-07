@@ -2,11 +2,21 @@
     <h3>Entities</h3>
     <p><a id="entity-search" class="btn btn-info btn-sm"> Search All Haiti for Entities </a></p>
 
-    <ul>
-        {{#each contentMatch}}
-            <li>{{entity}}</li>
-        {{/each}}
-    </ul>
+    {{#each contentMatch}}
+        <div class="list-group">
+            <h4 class="list-group-item-heading"> {{entity}}: {{value}} </h4>
+            <!--<p class="list-group-item-text">-->
+                <!--<a href="#" class="filter-language" id="{{name}}">-->
+                    <!--{{#if filterToggle}}-->
+                    <!--Add to Filter-->
+                        <!--{{else}}-->
+                    <!--Remove Filter-->
+                        <!--{{/if}}-->
+            <!---->
+                <!--</a>-->
+            <!--</p>-->
+        </div>
+    {{/each}}
 
     <form id="entityBlockForm">
 

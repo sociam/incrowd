@@ -295,9 +295,11 @@ Meteor.methods({
   }, // entitySearch
 
   entityTextSearch: function(data){
+    // searches @data for all entities in the entity collection
+
     var matchContent = [],
-      matchSummary = [],
-      entList = [];
+        matchSummary = [],
+        entList = [];
 
     var entities = Entity.find({}).fetch();
 
@@ -306,13 +308,73 @@ Meteor.methods({
 
     // get list of entities
     entities.forEach(function(e){
-      entList.push(e.name);
+      entList.push(e.name); // create an array of all entity names
     });
 
+    // for each post
     data.forEach(function(d){
+      // search through the entity list for matches
       for(ent in entList){
-        d.content.search(entList[ent]) >= 0 ? matchContent.push({ id: d._id, entity: entList[ent]}) : false;
-        d.summary.search(entList[ent]) >= 0 ? matchSummary.push({ id: d._id, entity: entList[ent]}) : false;
+
+        // search the post content, -1 is false, >= 0 means something is found
+        // check if entity is in post
+        if(d.content.search(entList[ent]) >= 0){
+
+          // true: now check if entity is already saved
+          if(_.where(matchContent, { entity : entList[ent]}).length > 0){
+
+            // throw an error log if multiples are found
+            if(_.where(matchContent, { entity : entList[ent]}) > 1 ){
+              console.error("Multiple posts matched, expected only 1 max.", _.where(matchContent, { entity : entList[ent]}));
+            }
+
+            var matchedPost = _.where(matchContent, { entity : entList[ent]}); // this should only every be 1 (see error log above)
+
+            // add 1 to the count and push the current post ID (d.id) into the postIDs array
+            // for the matched post
+            matchedPost.forEach(function(mp){
+              mp.count += 1;
+              mp.postIds.push(d.id);
+            });
+
+          } else { // not already in the list, so add it with a count of 1
+            matchContent.push({
+              entity: entList[ent],
+              count: 1,
+              postsIds: [ d._id ]
+            })
+          }
+
+        }
+        // same again for summary text
+        if(d.summary.search(entList[ent]) >= 0){
+
+          // true: now check if entity is already saved
+          if(_.where(matchSummary, { entity : entList[ent]}).length > 0){
+
+            // throw an error log if multiple summary matches are found
+            if(_.where(matchSummary, { entity : entList[ent]}) > 1 ){
+              console.error("Multiple summaries matched, expected only 1 max.", _.where(matchSummary, { entity : entList[ent]}));
+            }
+
+            var matchedPost = _.where(matchSummary, { entity : entList[ent]}); // this should only every be 1 (see error log above)
+
+            // add 1 to the count and push the current post ID (d.id) into the postIDs array
+            // for the matched post
+            matchedPost.forEach(function(mp){
+              mp.count += 1;
+              mp.postIds.push(d.id);
+            });
+
+          } else { // not already in the list, so add it with a count of 1
+            matchSummary.push({
+              entity: entList[ent],
+              count: 1,
+              postsIds: [ d._id ]
+            })
+          }
+
+        }
       }
     });
 
