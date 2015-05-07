@@ -31,7 +31,7 @@ Template.entityBlock.events({
     //})
 
     Meteor.call('entityTextSearch', Session.get('dataset'), function(err,res){
-      //console.log('entitySearch',err,res);
+      console.log('entitySearch',err,res);
       Session.set('contentEntityMatch', res.matchContent);
       Session.set('summaryEntityMatch', res.matchSummary);
     })

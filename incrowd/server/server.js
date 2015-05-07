@@ -323,6 +323,8 @@ Meteor.methods({
           // true: now check if entity is already saved
           if(_.where(matchContent, { entity : entList[ent]}).length > 0){
 
+            console.log(_.where(matchContent, { entity : entList[ent]}))
+
             // throw an error log if multiples are found
             if(_.where(matchContent, { entity : entList[ent]}) > 1 ){
               console.error("Multiple posts matched, expected only 1 max.", _.where(matchContent, { entity : entList[ent]}));
@@ -333,15 +335,16 @@ Meteor.methods({
             // add 1 to the count and push the current post ID (d.id) into the postIDs array
             // for the matched post
             matchedPost.forEach(function(mp){
+              //console.log(mp, mp.postIds, mp.postIds);
               mp.count += 1;
-              mp.postIds.push(d.id);
+              mp['postIds'].push(d.id);
             });
 
           } else { // not already in the list, so add it with a count of 1
             matchContent.push({
               entity: entList[ent],
               count: 1,
-              postsIds: [ d._id ]
+              postIds: [ d._id ]
             })
           }
 
@@ -370,7 +373,7 @@ Meteor.methods({
             matchSummary.push({
               entity: entList[ent],
               count: 1,
-              postsIds: [ d._id ]
+              postIds: [ d._id ]
             })
           }
 
