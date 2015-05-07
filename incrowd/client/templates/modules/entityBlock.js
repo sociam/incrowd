@@ -3,6 +3,15 @@ Template.entityBlock.helpers({
 
   contentMatch: function(){
     return Session.get('contentEntityMatch');
+  },
+
+  entityHighlightToggle: function(){
+
+    var highEnts = Session.get('highlight.entity');
+
+    console.log(highEnts, this);
+
+    return !_.contains(highEnts, this.entity); // returns true or false
   }
 
 });
@@ -26,5 +35,36 @@ Template.entityBlock.events({
       Session.set('contentEntityMatch', res.matchContent);
       Session.set('summaryEntityMatch', res.matchSummary);
     })
+  },
+
+  'click .highlight-entity': function(e){
+    e.preventDefault();
+
+    if(Session.get('highlight.entity') != undefined){
+
+      var ents = Session.get('highlight.entity');
+
+      // if the filter is on
+      if(_.contains(ents, this.entity)){
+
+        // switch the filter off
+        console.log('removing', this.name, _.without(ents, this.entity));
+        Session.set('highlight.entity',_.without(ents, this.entity));
+        //return _.without(langs, this.name);
+
+      } else {
+        ents.push(this.entity);
+        Session.set('highlight.entity', ents);
+      }
+
+    } else {
+
+      var arr = [this.entity];
+
+      Session.set('highlight.entity' , arr);
+
+    }
+
+
   }
 });

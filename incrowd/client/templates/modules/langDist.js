@@ -29,13 +29,7 @@ Template.langDist.helpers({
 
     var langs = Session.get('filter.language');
 
-    if(!_.contains(langs, this.name)){
-      return true
-
-    } else {
-
-      return false
-    }
+    return !_.contains(langs, this.name);
 
   },
 

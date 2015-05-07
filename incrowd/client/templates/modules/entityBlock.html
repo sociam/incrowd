@@ -4,26 +4,27 @@
 
     {{#each contentMatch}}
         <div class="list-group">
-            <h4 class="list-group-item-heading"> {{entity}}: {{value}} </h4>
-            <!--<p class="list-group-item-text">-->
-                <!--<a href="#" class="filter-language" id="{{name}}">-->
-                    <!--{{#if filterToggle}}-->
-                    <!--Add to Filter-->
-                        <!--{{else}}-->
-                    <!--Remove Filter-->
-                        <!--{{/if}}-->
-            <!---->
-                <!--</a>-->
-            <!--</p>-->
+            <h4 class="list-group-item-heading"> {{entity}}: <small> {{count}} </small> </h4>
+            <p class="list-group-item-text">
+                <a href="#" class="highlight-entity" id="{{name}}">
+                    {{#if entityHighlightToggle}}
+                        Add Highlight
+                    {{else}}
+                        Remove Highlight
+                    {{/if}}
+
+                </a>
+            </p>
         </div>
     {{/each}}
 
-    <form id="entityBlockForm">
+    <!-- Place holder for dynamic searching of entities in loaded posts -->
+    <!--<form id="entityBlockForm">-->
 
-        <div class="form-group">
-            <label for="{{entity}}">Entity Name</label>
-            <input type="text" class="form-control" id="{{entity}}" name="name" placeholder="Enter entity name">
-        </div>
+        <!--<div class="form-group">-->
+            <!--<label for="{{entity}}">Entity Name</label>-->
+            <!--<input type="text" class="form-control" id="{{entity}}" name="name" placeholder="Enter entity name">-->
+        <!--</div>-->
 
-    </form>
+    <!--</form>-->
 </template>
