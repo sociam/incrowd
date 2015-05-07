@@ -31,7 +31,9 @@ Template.langDist.helpers({
 
     if(!_.contains(langs, this.name)){
       return true
+
     } else {
+
       return false
     }
 

@@ -1,32 +1,28 @@
 
 Template.haiti.helpers({
 
-  posts: function(){
+  dataFind: function(){
 
-    var s = Session.get('filter.time');
-
-    if(s != undefined){
-      console.log(s, "is undefined")
-      var x = Haiti.find({"createdAt" : {
-        $lte: moment(Session.get('filter.time')).add('1','d').format("YYYY-MM-DD"),
-        $gt: moment(Session.get('filter.time')).subtract('1','d').format("YYYY-MM-DD")
-      }}).fetch();
-
-      Session.set('dataset', x);
-
-    } else {
-
-      var x = Haiti.find().fetch();
-
-      Session.set('dataset', x);
-
-    }
-
-    return x;
+    //var result = {},
+    //    time = {},
+    //    languages = {};
+    //
+    //if(Session.get('filter.time') != undefined ){
+    //  time = {"createdAt" : {
+    //    $lte: moment(Session.get('filter.time')).add('1','d').format("YYYY-MM-DD"),
+    //    $gt: moment(Session.get('filter.time')).subtract('1','d').format("YYYY-MM-DD")
+    //  }};
+    //
+    //  result = _.extend(result,time);
+    //  console.log(result);
+    //
+    //}
+    //
+    //Session.set('findQuery', result);
 
   },
 
-   timeColumnChart : function(){
+  timeColumnChart : function(){
 
     var chartData = [];
 
@@ -98,11 +94,6 @@ Template.haiti.events({
 
   'click #pos': function(){
     Meteor.call('pos', this.description)
-  },
-
-
-  //'click': function(e){
-  //  console.log('clicked timeColumnChart', e, arguments)
-  //}
+  }
 
 });

@@ -1,0 +1,34 @@
+<template name="posts">
+    {{#each posts}}
+        <div class="post">
+            <div class="post-content">
+                <h3><a href="#">{{summary}}</a></h3>
+                <p><span id="postContent">{{content}}</span></p>
+                <br/>
+                <p>
+                <div class="btn-group" role="group" aria-label="...">
+                    {{#if isLang}}
+                        <button type="button" class="btn btn-default btn-sm">{{language.code}}</button>
+                    {{/if}}
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageDropDown" data-toggle="dropdown" aria-expanded="true">
+                            {{#if isLang}}
+                                Change Language
+                            {{else}}
+                                Set Language
+                            {{/if}}
+
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu langDropDown" role="menu" aria-labelledby="langDropDown">
+                            {{#each languageSelect}}
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="{{code}}" href="#">{{name}}, ( {{code}} )</a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                </p>
+            </div>
+        </div>
+    {{/each}}
+</template>

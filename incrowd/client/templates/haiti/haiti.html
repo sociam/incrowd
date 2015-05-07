@@ -1,6 +1,7 @@
 <template name="haiti">
 
     <div class="row post">
+        {{dataFind}}
         <div class="col-md-12">
             {{> highchartsHelper chartId="timeColumnChart" chartWidth="100%" charHeight="100%" chartObject=timeColumnChart}}
         </div>
@@ -18,13 +19,7 @@
         </div> <!-- left column -->
 
         <div class="col-md-8" id="right">
-            {{#each posts}}
-                <div class="post">
-                    <div class="post-content">
-                        <h3><a href="#">{{summary}}</a><span id="postContent">{{content}}</span></h3>
-                    </div>
-                </div>
-            {{/each}}
+            {{>posts}}
         </div> <!-- right column -->
     </div>
 
