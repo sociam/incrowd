@@ -172,3 +172,7 @@ body {
 .entity-block-icons {
     /*text-align: right;*/
 }
+
+.highlight {
+    background-color: yellow;
+}

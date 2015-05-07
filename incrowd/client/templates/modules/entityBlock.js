@@ -9,7 +9,7 @@ Template.entityBlock.helpers({
 
     var highEnts = Session.get('highlight.entity');
 
-    console.log(highEnts, this);
+    //console.log(highEnts, this);
 
     return !_.contains(highEnts, this.entity); // returns true or false
   }
@@ -31,7 +31,7 @@ Template.entityBlock.events({
     //})
 
     Meteor.call('entityTextSearch', Session.get('dataset'), function(err,res){
-      console.log('entitySearch',err,res);
+      //console.log('entitySearch',err,res);
       Session.set('contentEntityMatch', res.matchContent);
       Session.set('summaryEntityMatch', res.matchSummary);
     })
@@ -40,21 +40,27 @@ Template.entityBlock.events({
   'click .highlight-entity': function(e){
     e.preventDefault();
 
-    if(Session.get('highlight.entity') != undefined){
+    if(Session.get('highlight.entity') != undefined){ // check for existing highlights
 
-      var ents = Session.get('highlight.entity');
+      var ents = Session.get('highlight.entity'); // get session vars
 
       // if the filter is on
       if(_.contains(ents, this.entity)){
 
         // switch the filter off
-        console.log('removing', this.name, _.without(ents, this.entity));
+        //console.log('removing', this.name, _.without(ents, this.entity));
         Session.set('highlight.entity',_.without(ents, this.entity));
         //return _.without(langs, this.name);
 
-      } else {
+        // and turn off the highlight
+        $('p').unhighlight(this.entity);
+
+      } else { // push it to the session var
         ents.push(this.entity);
         Session.set('highlight.entity', ents);
+
+        // and highlight the text
+        $('p').highlight(this.entity);
       }
 
     } else {
