@@ -176,3 +176,12 @@ body {
 .highlight {
     background-color: yellow;
 }
+
+.entityDropDownForm {
+    width: 350px;
+}
+
+.entityDropDownForm #entityForm {
+    width: 90%;
+    margin-left: 5%;
+}

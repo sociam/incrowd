@@ -51,6 +51,29 @@ Template.posts.helpers({
 
     return x;
 
+  },
+
+  isTextSelected: function(){
+
+    var x = Session.get('text.selection');
+
+    if( x != undefined){
+
+      if (x.id == this._id){
+        return true;
+      }
+
+    } else {
+
+      return false;
+
+    }
+
+  },
+
+  selectedText: function(){
+
+    return Session.get('text.selection');
   }
 
 });
@@ -71,6 +94,49 @@ Template.posts.events({
      console.log('call updatePost', err,res);
     })
 
-  }
+  },
+
+  'click #postContent': function(e, t) {
+
+    console.log ('mouseup' , this);
+
+    var text = "";
+
+    if (window.getSelection().toString().length > 0) {
+      text = window.getSelection().toString();
+      Session.set('text.selection', { text: text, id: this._id } );
+    } else {
+      Session.set('text.selection', undefined );
+    }
+  },
+
+  'click .entityDropDownForm': function(e){
+    e.stopPropagation();
+  },
+
+  'submit form': function(e){
+
+    e.preventDefault();
+
+    var entity = {
+      name: $(e.target).find('[name=name]').val(),
+      description: $(e.target).find('[name=description]').val(),
+      categories: []
+    };
+
+    _.map(e.target, function(e){ e.type=='checkbox' && e.checked ? entity.categories.push(e.value) : "false" });
+
+    console.log(entity);
+
+    if(entity.name != ""){
+      Meteor.call("insertEntity", entity, function(err,res){
+          $('#entityDropDownForm').dropdown('toggle');
+      });
+
+    } else {
+      console.error('Cannot submit new Entity without a NAME')
+    }
+
+  } // submit form
 
 });

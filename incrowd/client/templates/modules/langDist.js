@@ -108,7 +108,7 @@ Template.langDist.events({
 
       } else {
         langs.push(this.name);
-        Session.set('filter.language', langs);
+        Session.set('filter.language', langs); // add to session var filters
       }
 
     } else {
