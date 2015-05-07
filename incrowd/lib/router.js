@@ -13,3 +13,5 @@ Router.route('/haiti', { name: 'haiti'});
 Router.route('/crisis-api', { name: 'searchBar' });
 
 Router.route('/admin/entity', { name: 'entity' });
+
+Router.route('/admin/api/setup', { name: 'apiAdmin' });

@@ -13,11 +13,21 @@ Meteor.methods({
 
     console.log('search called');
 
-    var url = 'http://api.crisis.net/item?apikey=' + apiCredentials.crisisnet.key;
+    var config = JSON.parse(Assets.getText('apiCredentials.json')) ;
+
+    var url = 'http://api.crisis.net/item?apikey=' + config.key;
 
     var data = HTTP.get(url, options);
 
     return data.data;
+
+  },
+
+  runSearches: function(){
+
+    var config = JSON.parse(Assets.getText('crisisnetConfig.json')) ;
+
+    console.log(config);
 
   },
 
