@@ -14,27 +14,27 @@ Template.posts.helpers({
 
   },
 
-  languageSelect: function(){
+  //languageSelect: function(){
+  //
+  //  var langs = [
+  //    { "code": "en", "name": "English"},
+  //    { "code": "ar", "name": "Arabic"},
+  //    { "code": "es", "name": "Spanish"},
+  //    { "code": "fr", "name": "French"},
+  //    { "code": "de", "name": "German"}
+  //  ];
+  //
+  //  return langs;
+  //
+  //},
 
-    var langs = [
-      { "code": "en", "name": "English"},
-      { "code": "ar", "name": "Arabic"},
-      { "code": "es", "name": "Spanish"},
-      { "code": "fr", "name": "French"},
-      { "code": "de", "name": "German"}
-    ];
-
-    return langs;
-
-  },
-
-  posts: function(){
+  postItems: function(){
 
     var s = Session.get('filter.time');
 
     if(s != undefined){
       console.log(s, "is undefined")
-      var x = Haiti.find({"createdAt" : {
+      var x = Posts.find({"createdAt" : {
         $lte: moment(Session.get('filter.time')).add('1','d').format("YYYY-MM-DD"),
         $gt: moment(Session.get('filter.time')).subtract('1','d').format("YYYY-MM-DD")
       }}).fetch();
@@ -43,7 +43,7 @@ Template.posts.helpers({
 
     } else {
 
-      var x = Haiti.find().fetch();
+      var x = Posts.find({},{ limit: 50 }).fetch();
 
       Session.set('dataset', x);
 

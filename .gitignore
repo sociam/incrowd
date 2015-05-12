@@ -4,3 +4,5 @@
 incrowd/private/apiCredentials.js
 
 incrowd/server/kadira.js
+
+incrowd/private/apiCredentials.json
