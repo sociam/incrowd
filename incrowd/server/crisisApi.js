@@ -9,13 +9,13 @@ Meteor.methods({
     data.newCount = input != undefined ? input.newCount : 0,
     data.total = input != undefined ? input.total : 0,
     data.counter = input != undefined ? input.counter : 0,
-    data.limit = 50;
+    data.limit = 250;
 
     data['options'] = input != undefined ? input.options : {
 
       params: {
         //'placeName': "syria",
-        'limit': 5,
+        'limit': 250,
         offset: 0
       }
 

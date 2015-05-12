@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f434bce2-72e6-4f2e-8b52-7ee7a5abf33a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/posts/allPosts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/posts/all_posts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/posts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/apiAdmin.js" afterPath="$PROJECT_DIR$/client/templates/admin/apiAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/api_admin.html" afterPath="$PROJECT_DIR$/client/templates/admin/api_admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" afterPath="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/crisis.js" afterPath="$PROJECT_DIR$/server/crisis.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/crisisApi.js" afterPath="$PROJECT_DIR$/server/crisisApi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" afterPath="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/private/crisisnetConfig.json" afterPath="$PROJECT_DIR$/private/crisisnetConfig.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/application/layout/layout.html" afterPath="$PROJECT_DIR$/client/templates/application/layout/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mup.json" afterPath="$PROJECT_DIR$/mup.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts.html" afterPath="$PROJECT_DIR$/client/templates/posts/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts.js" afterPath="$PROJECT_DIR$/client/templates/posts/posts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/subscriptions.js" afterPath="$PROJECT_DIR$/client/lib/subscriptions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="incrowd.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="crisisApi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="crisisApi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/crisisApi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81395346" vertical-offset="323" max-vertical-offset="2057">
-              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="apiCredentials.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/private/apiCredentials.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -58,8 +50,8 @@
       <file leaf-file-name="posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1428">
-              <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+            <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1428">
+              <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -68,8 +60,18 @@
       <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="2499">
-              <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
+            <state vertical-scroll-proportion="-8.5" vertical-offset="1343" max-vertical-offset="2499">
+              <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crisis.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/crisis.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.093023255" vertical-offset="0" max-vertical-offset="731">
+              <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -98,7 +100,7 @@
       <file leaf-file-name="apiAdmin.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/templates/admin/apiAdmin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1496">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
               <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
@@ -144,7 +146,6 @@
         <option value="$PROJECT_DIR$/public/languages.csv" />
         <option value="$PROJECT_DIR$/client/templates/haiti/haiti.html" />
         <option value="$PROJECT_DIR$/client/templates/haiti/haiti.js" />
-        <option value="$PROJECT_DIR$/server/crisis.js" />
         <option value="$PROJECT_DIR$/client/templates/modules/langDist.html" />
         <option value="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js" />
         <option value="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.html" />
@@ -175,6 +176,7 @@
         <option value="$PROJECT_DIR$/client/templates/admin/api_admin.html" />
         <option value="$PROJECT_DIR$/client/templates/admin/apiAdmin.js" />
         <option value="$PROJECT_DIR$/server/crisisApi.js" />
+        <option value="$PROJECT_DIR$/server/crisis.js" />
       </list>
     </option>
   </component>
@@ -837,26 +839,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/apiCredentials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023255814" vertical-offset="0" max-vertical-offset="731">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/private/crisisnetConfig.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.046511628" vertical-offset="0" max-vertical-offset="731">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/crisis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23255815" vertical-offset="0" max-vertical-offset="731">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1085,34 +1071,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-29.423077" vertical-offset="0" max-vertical-offset="2499">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/all_posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="527">
-          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="1428">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/lib/subscriptions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.023255814" vertical-offset="0" max-vertical-offset="731">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/apiCredentials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -1143,8 +1113,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/crisisApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81395346" vertical-offset="323" max-vertical-offset="2057">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2057">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/all_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="527">
+          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="1428">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5" vertical-offset="1343" max-vertical-offset="2499">
+          <caret line="92" column="21" selection-start-line="92" selection-start-column="21" selection-end-line="92" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/crisis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.093023255" vertical-offset="0" max-vertical-offset="731">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
           <folding />
         </state>
       </provider>
