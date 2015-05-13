@@ -1,0 +1,57 @@
+<template name="translations">
+
+    {{#each translations}}
+        <div class="panel panel-default">
+
+            <div class="panel-body">
+                {{#if isEditable}}
+                    <div class="form-group">
+                        <textarea name="description" id="translationText" class="form-control" rows="5">{{translation}}</textarea>
+                    </div>
+                {{else}}
+                    {{translation}}
+                {{/if}}
+            </div>
+
+            <div class="btn-toolbar" role="toolbar" aria-label="...">
+                <div class="btn-group" role="group" aria-label="...">
+                    {{#if isLang}}
+                        <button type="button" class="btn btn-default btn-xs">{{language}}</button>
+                    {{/if}}
+                    <div class="btn-group" role="group">
+                        <button class="btn btn-default btn-xs dropdown-toggle" type="button" id="languageDropDown" data-toggle="dropdown" aria-expanded="true">
+                            {{#if isLang}}
+                                Change Language
+                            {{else}}
+                                Set Language
+                            {{/if}}
+
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu translateLangDropDown" role="menu" aria-labelledby="translateLangDropDown">
+                            {{#each languageSelect}}
+                                <li role="presentation"><a role="menuitem" tabindex="-1" id="{{code}}" href="#">{{name}}, ( {{code}} )</a></li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="...">
+
+                    {{#if isEditable}}
+                        <button type="button" id="saveTranslation" class="btn btn-warning btn-xs">Save Translation</button>
+                    {{else}}
+                        <button type="button" id="editTranslation" class="btn btn-warning btn-xs">Edit Translation</button>
+                    {{/if}}
+
+                    <!--<div class="btn-group" role="group">-->
+
+                        <!--<button type="button" id="deletePost" class="btn btn-danger btn-xs">Delete Translation</button>-->
+
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    {{/each}}
+
+
+</template>

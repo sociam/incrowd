@@ -7,6 +7,8 @@
                     {{content}}
                 </span></p>
                 <br/>
+
+                {{>translations}}
                 <p>
                     <div class="btn-toolbar" role="toolbar" aria-label="...">
                         <div class="btn-group" role="group" aria-label="...">
@@ -30,6 +32,13 @@
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="btn-group" role="group">
+
+                            <button type="button" id="addTranslation" class="btn btn-default btn-sm">Add Translation</button>
+
+                        </div>
+
                         {{#if isTextSelected}}
                             <div class="btn-group" role="group">
                                 <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="entityDropDownForm" data-toggle="dropdown" aria-expanded="true">
@@ -69,6 +78,12 @@
                                 </ul>
                             </div>
                         {{/if}}
+
+                        <div class="btn-group" role="group">
+
+                            <button type="button" id="deletePost" class="btn btn-danger btn-sm">Delete Post</button>
+
+                        </div>
                     </div>
                 </p>
 

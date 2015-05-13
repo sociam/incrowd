@@ -43,7 +43,7 @@ Template.posts.helpers({
 
     } else {
 
-      var x = Posts.find({},{ limit: 50 }).fetch();
+      var x = Posts.find({},{ limit: 10 }).fetch();
 
       Session.set('dataset', x);
 
@@ -76,6 +76,12 @@ Template.posts.helpers({
     return Session.get('text.selection');
   }
 
+  //translations: function(){
+  //
+  //  return this.translations;
+  //
+  //}
+
 });
 
 Template.posts.events({
@@ -96,6 +102,16 @@ Template.posts.events({
 
   },
 
+  //'click .translateLangDropDown': function(e, template){
+  //  //e.preventDefault();
+  //  console.log('button clicked', this, e.target.id);
+  //
+  //  Meteor.call('updateTranslationLanguage', this, e.target.id, function(err,res){
+  //    console.log('call update translation language', err,res);
+  //  })
+  //
+  //},
+
   'click #postContent': function(e, t) {
 
     console.log ('mouseup' , this);
@@ -114,9 +130,33 @@ Template.posts.events({
     e.stopPropagation();
   },
 
-  'submit form': function(e){
+  'click #addTranslation': function(e){
+    e.stopPropagation();
+
+    console.log('add translation', e.target, this);
+
+    Meteor.call('addEmptyTranslation', this._id, this.userId, function(err,res){
+
+      console.log(err,res);
+
+    });
+
+  },
+
+  'click #deletePost': function(){
+    console.log(this._id);
+    Meteor.call('deletePost', this, function(err, res){
+      console.error('deleteing post', this._id, err, res);
+    });
+
+  },
+
+
+  'submit #entityForm': function(e){
 
     e.preventDefault();
+
+    console.log('entity form submitted');
 
     var entity = {
       name: $(e.target).find('[name=name]').val(),
