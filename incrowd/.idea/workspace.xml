@@ -2,13 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f434bce2-72e6-4f2e-8b52-7ee7a5abf33a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/serverPosts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/posts/translations.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/posts/translations.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.gitignore" afterPath="$PROJECT_DIR$/../.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/crisis/crisis.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/crisis/crisis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/collections/crisis.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/crisisAdminServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/crisis/crisisPosts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/modules/crisis_langDist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/modules/crisis_langDist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/crisis/crisis_posts.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/entityServer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/templates/application/layout/layout.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/css/typahead.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/haiti/haiti.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/client/templates/haiti/haiti.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/allPosts.js" afterPath="$PROJECT_DIR$/client/templates/posts/allPosts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/crisis.js" afterPath="$PROJECT_DIR$/server/crisis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts.html" afterPath="$PROJECT_DIR$/client/templates/posts/posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/posts.js" afterPath="$PROJECT_DIR$/client/templates/posts/posts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" afterPath="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/crisisApi.js" afterPath="$PROJECT_DIR$/server/crisisApi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" afterPath="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/cron.js" afterPath="$PROJECT_DIR$/server/cron.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/entity.html" afterPath="$PROJECT_DIR$/client/templates/admin/entity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/entity.js" afterPath="$PROJECT_DIR$/client/templates/admin/entity.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/modules/entityBlock.js" afterPath="$PROJECT_DIR$/client/templates/modules/entityBlock.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js" afterPath="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/collections/haiti.js" afterPath="$PROJECT_DIR$/lib/collections/haiti.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/application/layout/layout.html" afterPath="$PROJECT_DIR$/client/templates/application/layout/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/packages" afterPath="$PROJECT_DIR$/.meteor/packages" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/publications.js" afterPath="$PROJECT_DIR$/server/publications.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/router.js" afterPath="$PROJECT_DIR$/lib/router.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.js" afterPath="$PROJECT_DIR$/server/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/serverPosts.js" afterPath="$PROJECT_DIR$/server/serverPosts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/stopwords.js" afterPath="$PROJECT_DIR$/server/stopwords.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/lib/subscriptions.js" afterPath="$PROJECT_DIR$/client/lib/subscriptions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/templates/posts/translations.js" afterPath="$PROJECT_DIR$/client/templates/posts/translations.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.meteor/versions" afterPath="$PROJECT_DIR$/.meteor/versions" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -34,101 +60,103 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="crisisApi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/crisisApi.js">
+      <file leaf-file-name="crisis.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2057">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="510">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
+      <file leaf-file-name="crisisAdmin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/admin/crisisAdmin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.961538" vertical-offset="978" max-vertical-offset="1683">
-              <caret line="85" column="30" selection-start-line="81" selection-start-column="24" selection-end-line="85" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2278">
+              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translations.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/translations.html">
+      <file leaf-file-name="crisis_admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/admin/crisis_admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6865248" vertical-offset="349" max-vertical-offset="1054">
-              <caret line="49" column="30" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="30" />
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="1037" max-vertical-offset="1870">
+              <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translations.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/translations.js">
+      <file leaf-file-name="registeredHelpers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/registeredHelpers/registeredHelpers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1343">
-              <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3179">
-              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="crisis.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/crisis.js">
+        <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1207">
-              <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="1836">
+              <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="serverPosts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/serverPosts.js">
+      <file leaf-file-name="crisis_posts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis_posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-              <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2006">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_posts.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/all_posts.html">
+      <file leaf-file-name="langDist.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/modules/langDist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="527">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="476">
+              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="apiAdmin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/admin/apiAdmin.js">
+      <file leaf-file-name="crisis_langDist.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/templates/modules/crisis_langDist.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1496">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.120567374" vertical-offset="0" max-vertical-offset="935">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crisis_langDist.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/modules/crisis_langDist.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
+              <caret line="14" column="18" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allPosts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/templates/posts/allPosts.js">
+      <file leaf-file-name="crisisPosts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisisPosts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.038462" vertical-offset="1023" max-vertical-offset="1785">
-              <caret line="74" column="25" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3859">
+              <caret line="120" column="42" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -142,51 +170,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.meteor/.gitignore" />
-        <option value="$PROJECT_DIR$/client/helpers/config.js" />
-        <option value="$PROJECT_DIR$/client/templates/admin/entity.html" />
-        <option value="$PROJECT_DIR$/server/kadira.js" />
-        <option value="$PROJECT_DIR$/client/templates/admin/entity.js" />
-        <option value="$PROJECT_DIR$/public/languages.js" />
-        <option value="$PROJECT_DIR$/private/languages.csv" />
-        <option value="$PROJECT_DIR$/public/languages.csv" />
-        <option value="$PROJECT_DIR$/client/templates/haiti/haiti.html" />
         <option value="$PROJECT_DIR$/client/templates/haiti/haiti.js" />
         <option value="$PROJECT_DIR$/client/templates/modules/langDist.html" />
-        <option value="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js" />
         <option value="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.html" />
         <option value="$PROJECT_DIR$/client/templates/modules/entityBlock.html" />
         <option value="$PROJECT_DIR$/client/templates/modules/langDist.js" />
-        <option value="$PROJECT_DIR$/client/templates/modules/entityBlock.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/private/apiCredentials.js" />
         <option value="$PROJECT_DIR$/private/apiCredentials.json" />
         <option value="$PROJECT_DIR$/private/crisisnet_config.js" />
         <option value="$PROJECT_DIR$/private/crisisnet_config.json" />
-        <option value="$PROJECT_DIR$/server/cron.js" />
         <option value="$PROJECT_DIR$/private/crisisnetConfig.json" />
         <option value="$PROJECT_DIR$/mup.json" />
         <option value="$PROJECT_DIR$/client/templates/registeredHelpers/registeredHelpers.js" />
-        <option value="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" />
-        <option value="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" />
         <option value="$PROJECT_DIR$/client/templates/posts/all_posts.html" />
-        <option value="$PROJECT_DIR$/client/templates/posts/allPosts.js" />
-        <option value="$PROJECT_DIR$/lib/router.js" />
-        <option value="$PROJECT_DIR$/client/templates/application/layout/layout.html" />
         <option value="$PROJECT_DIR$/lib/collections/posts.js" />
-        <option value="$PROJECT_DIR$/client/lib/subscriptions.js" />
-        <option value="$PROJECT_DIR$/server/publications.js" />
         <option value="$PROJECT_DIR$/client/templates/admin/api_admin.html" />
         <option value="$PROJECT_DIR$/client/templates/admin/apiAdmin.js" />
-        <option value="$PROJECT_DIR$/server/crisisApi.js" />
         <option value="$PROJECT_DIR$/.meteor/packages" />
         <option value="$PROJECT_DIR$/client/css/style.css" />
         <option value="$PROJECT_DIR$/client/templates/posts/posts.html" />
         <option value="$PROJECT_DIR$/client/templates/posts/posts.js" />
-        <option value="$PROJECT_DIR$/server/serverPosts.js" />
-        <option value="$PROJECT_DIR$/server/crisis.js" />
-        <option value="$PROJECT_DIR$/client/templates/posts/translations.js" />
         <option value="$PROJECT_DIR$/client/templates/posts/translations.html" />
+        <option value="$PROJECT_DIR$/server/crisisApi.js" />
+        <option value="$PROJECT_DIR$/server/stopwords.js" />
+        <option value="$PROJECT_DIR$/server/serverPosts.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/crisis.js" />
+        <option value="$PROJECT_DIR$/lib/collections/haiti.js" />
+        <option value="$PROJECT_DIR$/server/entityServer.js" />
+        <option value="$PROJECT_DIR$/client/templates/admin/entity.html" />
+        <option value="$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js" />
+        <option value="$PROJECT_DIR$/client/templates/modules/entityBlock.js" />
+        <option value="$PROJECT_DIR$/client/templates/admin/entity.js" />
+        <option value="$PROJECT_DIR$/client/templates/posts/allPosts.js" />
+        <option value="$PROJECT_DIR$/lib/collections/crisis.js" />
+        <option value="$PROJECT_DIR$/client/css/typahead.css" />
+        <option value="$PROJECT_DIR$/client/lib/subscriptions.js" />
+        <option value="$PROJECT_DIR$/server/publications.js" />
+        <option value="$PROJECT_DIR$/server/crisisAdminServer.js" />
+        <option value="$PROJECT_DIR$/client/templates/application/layout/layout.js" />
+        <option value="$PROJECT_DIR$/client/templates/crisis/crisis.js" />
+        <option value="$PROJECT_DIR$/client/templates/application/layout/layout.html" />
+        <option value="$PROJECT_DIR$/lib/router.js" />
+        <option value="$PROJECT_DIR$/server/cron.js" />
+        <option value="$PROJECT_DIR$/client/templates/crisis/crisisPosts.js" />
+        <option value="$PROJECT_DIR$/client/templates/crisis/crisis_posts.html" />
+        <option value="$PROJECT_DIR$/client/templates/crisis/crisis.html" />
+        <option value="$PROJECT_DIR$/client/templates/posts/translations.js" />
+        <option value="$PROJECT_DIR$/client/templates/admin/crisisAdmin.js" />
+        <option value="$PROJECT_DIR$/client/templates/admin/crisis_admin.html" />
+        <option value="$PROJECT_DIR$/client/templates/modules/crisis_langDist.js" />
+        <option value="$PROJECT_DIR$/client/templates/modules/crisis_langDist.html" />
       </list>
     </option>
   </component>
@@ -433,10 +467,6 @@
               <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="haiti" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -453,6 +483,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="crisis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -572,24 +606,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="client" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="incrowd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="incrowd" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value=".meteor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -612,6 +628,9 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/pb/Documents/meteor/soton/incrowd/incrowd/client/lib/subscriptions.js" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/templates/modules" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/templates/registeredHelpers" />
       <recent name="$PROJECT_DIR$/public" />
@@ -678,10 +697,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29776022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18582791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21836588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -700,7 +719,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32806325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29776022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298611" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -709,7 +728,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18582791" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21836588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -736,46 +755,46 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/css/haiti.css">
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/translations.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.615385" vertical-offset="349" max-vertical-offset="1054">
+          <caret line="49" column="30" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/private/apiCredentials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04822695" vertical-offset="0" max-vertical-offset="705">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/stopwords.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.02367688" vertical-offset="0" max-vertical-offset="718">
+          <caret line="1" column="61" selection-start-line="1" selection-start-column="61" selection-end-line="1" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/serverPosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5813953" vertical-offset="0" max-vertical-offset="731">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/kadira.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/modules/langDist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="2210">
-          <caret line="110" column="76" selection-start-line="110" selection-start-column="76" selection-end-line="110" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/modules/langDist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="476">
-          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/release">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/versions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -783,120 +802,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/cnet.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3858156" vertical-offset="0" max-vertical-offset="705">
+        <state vertical-scroll-proportion="-10.461538" vertical-offset="0" max-vertical-offset="442">
           <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/private/crisisnetConfig.json">
+    <entry file="file://$PROJECT_DIR$/server/entityServer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.046511628" vertical-offset="0" max-vertical-offset="731">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/modules/entityBlock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="1377">
-          <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/packages.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mup.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.538462" vertical-offset="0" max-vertical-offset="833">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/registeredHelpers/registeredHelpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/entity.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.461538" vertical-offset="68" max-vertical-offset="1207">
-          <caret line="20" column="26" selection-start-line="16" selection-start-column="19" selection-end-line="20" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/crisis_admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077" vertical-offset="238" max-vertical-offset="1394">
-          <caret line="48" column="117" selection-start-line="48" selection-start-column="117" selection-end-line="48" selection-end-column="117" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/cron.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27906978" vertical-offset="0" max-vertical-offset="731">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/entity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/nouns.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/haiti.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/collections/posts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.093023255" vertical-offset="0" max-vertical-offset="731">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -911,31 +826,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/haiti/haiti.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/langDist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3023256" vertical-offset="1054" max-vertical-offset="1785">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/application/layout/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43404254" vertical-offset="0" max-vertical-offset="1003">
-          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/api/apiSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/api/item.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/api/searchBar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -951,7 +850,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/api/searchBar.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/api/item.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -959,88 +858,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/crisisAdmin.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/api/apiSearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6744186" vertical-offset="0" max-vertical-offset="731">
-          <caret line="29" column="2" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/entity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5116279" vertical-offset="170" max-vertical-offset="1173">
-          <caret line="32" column="9" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.069767445" vertical-offset="0" max-vertical-offset="731">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/haiti/haiti.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28936172" vertical-offset="0" max-vertical-offset="705">
-          <caret line="12" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1363" max-vertical-offset="2686">
-          <caret line="339" column="30" selection-start-line="339" selection-start-column="28" selection-end-line="339" selection-end-column="30" />
-          <folding>
-            <element signature="e#427#520#0" expanded="false" />
-            <element signature="e#549#747#0" expanded="false" />
-            <element signature="e#791#917#0" expanded="false" />
-            <element signature="e#947#1160#0" expanded="false" />
-            <element signature="e#1085#1130#0" expanded="false" />
-            <element signature="e#1186#1323#0" expanded="false" />
-            <element signature="e#1353#1586#0" expanded="false" />
-            <element signature="e#1615#2088#0" expanded="false" />
-            <element signature="e#2122#2289#0" expanded="false" />
-            <element signature="e#2313#5572#0" expanded="false" />
-            <element signature="e#5604#5660#0" expanded="false" />
-            <element signature="e#5882#6304#0" expanded="false" />
-            <element signature="e#6357#7062#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/publications.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/lib/subscriptions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023255814" vertical-offset="0" max-vertical-offset="731">
-          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/private/apiCredentials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="136">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/admin/api_admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1054">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1053,15 +874,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/allPosts.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/entityBlock.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.038462" vertical-offset="1023" max-vertical-offset="1785">
-          <caret line="74" column="25" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="25" />
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="595">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/npm-container/index.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/entityBlock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6511628" vertical-offset="0" max-vertical-offset="1360">
+          <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/css/typahead.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1156">
+          <caret line="5" column="15" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/api_admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28451884" vertical-offset="119" max-vertical-offset="1054">
+          <caret line="11" column="99" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.4157549" vertical-offset="407" max-vertical-offset="2873">
+          <caret line="307" column="2" selection-start-line="307" selection-start-column="2" selection-end-line="307" selection-end-column="2" />
+          <folding>
+            <element signature="e#976#1069#0" expanded="false" />
+            <element signature="e#1098#1296#0" expanded="false" />
+            <element signature="e#1340#1466#0" expanded="false" />
+            <element signature="e#1496#1709#0" expanded="false" />
+            <element signature="e#1634#1679#0" expanded="false" />
+            <element signature="e#1735#1872#0" expanded="false" />
+            <element signature="e#1902#2135#0" expanded="false" />
+            <element signature="e#2164#2637#0" expanded="false" />
+            <element signature="e#2671#2838#0" expanded="false" />
+            <element signature="e#2862#6121#0" expanded="false" />
+            <element signature="e#6153#6209#0" expanded="false" />
+            <element signature="e#6431#6853#0" expanded="false" />
+            <element signature="e#6906#7611#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/entityBlockIcons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2531915" vertical-offset="0" max-vertical-offset="470">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/haiti.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="13" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/collections/nouns.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1069,99 +952,246 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/packages/npm-container/package.js">
+    <entry file="file://$PROJECT_DIR$/lib/collections/posts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/.gitignore">
+    <entry file="file://$PROJECT_DIR$/lib/collections/entity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.meteor/packages">
+    <entry file="file://$PROJECT_DIR$/lib/collections/crisis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28895184" vertical-offset="0" max-vertical-offset="706">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="472">
+          <caret line="0" column="40" selection-start-line="0" selection-start-column="40" selection-end-line="0" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/publications.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52380955" vertical-offset="0" max-vertical-offset="357">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/lib/subscriptions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.124542125" vertical-offset="0" max-vertical-offset="273">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/crisisAdminServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <marker date="1431692777000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431692777000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431692777000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1431692777000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/crisis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <caret line="61" column="79" selection-start-line="61" selection-start-column="79" selection-end-line="61" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/crisisApi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="2057">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1972">
+          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
+          <folding>
+            <element signature="e#3036#3063#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47254336" vertical-offset="965" max-vertical-offset="1683">
+          <caret line="76" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/posts/all_posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="527">
-          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.43404254" vertical-offset="0" max-vertical-offset="705">
+          <caret line="18" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/css/style.css">
+    <entry file="file://$PROJECT_DIR$/client/templates/application/layout/layout.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8604651" vertical-offset="2533" max-vertical-offset="3264">
-          <caret line="186" column="1" selection-start-line="186" selection-start-column="1" selection-end-line="186" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.069767445" vertical-offset="0" max-vertical-offset="731">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/application/layout/layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.961538" vertical-offset="978" max-vertical-offset="1683">
-          <caret line="85" column="30" selection-start-line="81" selection-start-column="24" selection-end-line="85" selection-end-column="30" />
+        <state vertical-scroll-proportion="-8.961538" vertical-offset="141" max-vertical-offset="1139">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/serverPosts.js">
+    <entry file="file://$PROJECT_DIR$/lib/router.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="493">
-          <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/cron.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046511628" vertical-offset="0" max-vertical-offset="731">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/posts/allPosts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="1836">
+          <caret line="90" column="21" selection-start-line="90" selection-start-column="21" selection-end-line="90" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/posts/posts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3179">
-          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="3179">
+          <caret line="37" column="47" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/crisis.js">
+    <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisisPosts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="340" max-vertical-offset="1207">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1649" max-vertical-offset="3859">
+          <caret line="120" column="42" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1836">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/templates/posts/translations.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="1343">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.4883721" vertical-offset="0" max-vertical-offset="1343">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/templates/posts/translations.html">
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/langDist.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6865248" vertical-offset="349" max-vertical-offset="1054">
-          <caret line="49" column="30" selection-start-line="45" selection-start-column="19" selection-end-line="49" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/entity.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.83120567" vertical-offset="383" max-vertical-offset="1088">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/entity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0930233" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/registeredHelpers/registeredHelpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/crisisAdmin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1173" max-vertical-offset="2278">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis_posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2006">
+          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/admin/crisis_admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="1037" max-vertical-offset="1870">
+          <caret line="68" column="28" selection-start-line="68" selection-start-column="28" selection-end-line="68" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/crisis/crisis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="510">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/crisis_langDist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2839">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/templates/modules/crisis_langDist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.120567374" vertical-offset="0" max-vertical-offset="935">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

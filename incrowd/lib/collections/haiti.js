@@ -1,1 +1,1 @@
-Haiti = new Mongo.Collection('haiti');
+//Haiti = new Mongo.Collection('haiti');

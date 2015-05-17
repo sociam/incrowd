@@ -1,18 +1,29 @@
-var natural = Meteor.npmRequire('natural'),
-    tokenizer = new natural.WordTokenizer(),
 
-  // csv
-    toCsv = Meteor.npmRequire('to-csv');
-
-  //language detectors
-var languageDetect = Meteor.npmRequire('languagedetect'),
-    lngDetect = new languageDetect();
-
-var franc = Meteor.npmRequire('franc');
-
-var pos = Meteor.npmRequire('pos');
-
-var nlp = Meteor.npmRequire('nlp_compromise');
+//// NLP Methods, not used in the main app at this point but
+//// could be wired in to the Posts so have left these in
+//// these are wired to buttons on the FS page in the admin folder
+//// but this is not used in the main app and some methods
+//// refer to a Haiti collection which is no longer used - main
+//// collection is now called Posts.
+//
+//// load natural NLP package
+//var natural = Meteor.npmRequire('natural'),
+//    tokenizer = new natural.WordTokenizer(),
+//
+//  // csv NLP package
+//    toCsv = Meteor.npmRequire('to-csv');
+//
+//  //language detectors package
+//var languageDetect = Meteor.npmRequire('languagedetect'),
+//    lngDetect = new languageDetect();
+//
+//// language detector (not sure which is better to use, this or the one above)
+//var franc = Meteor.npmRequire('franc');
+//
+//// Part-of-Speech tagger NLP package
+//var pos = Meteor.npmRequire('pos');
+//
+//var nlp = Meteor.npmRequire('nlp_compromise');
 
 Meteor.methods({
 
@@ -22,7 +33,7 @@ Meteor.methods({
   },
 
   tokenize: function(text){
-    // tokenise a string of @text
+    // tokenize a string of @text
 
     var x = [];
     var obj= tokenizer.tokenize(text);

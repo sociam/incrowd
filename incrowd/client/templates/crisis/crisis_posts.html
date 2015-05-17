@@ -1,0 +1,113 @@
+<template name="crisisPosts">
+
+    <!--
+        Unused settings for users to change the number of posts returned.
+        the limit is default set to 100
+    -->
+    <!--<h3> Limit: {{limit}}.-->
+        <!--Change to:-->
+        <!--<a href="#" value="20" class="setLimit">20</a>,-->
+        <!--<a href="#" value="50" class="setLimit">50</a>,-->
+        <!--<a href="#" value="100" class="setLimit">100</a>,-->
+        <!--<a href="#" value="all" class="setLimit">All</a>-->
+    <!--</h3>-->
+
+    <div class="post">
+        <h4> FILTERS : {{timeFilter}} </h4>
+        <h6> <button type="button" class="btn btn-info btn-xs" id="clearAllFilters"> Clear All Filters </button> </h6>
+    </div>
+
+
+    {{#each postItems}}
+        <div class="post">
+            <div class="post-content">
+                <h3><a href="#">{{summary}}</a></h3>
+                <p><span id="postContent">
+                    {{content}}
+                </span></p>
+                <br/>
+
+                {{>translations}}
+                <p>
+                <div class="btn-toolbar" role="toolbar" aria-label="...">
+                    <div class="btn-group" role="group" aria-label="...">
+                        {{#if isLang}}
+                            <button type="button" class="btn btn-default btn-sm">{{language.code}}</button>
+                        {{/if}}
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="languageDropDown" data-toggle="dropdown" aria-expanded="true">
+                                {{#if isLang}}
+                                    Change Language
+                                {{else}}
+                                    Set Language
+                                {{/if}}
+
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu langDropDown" role="menu" aria-labelledby="langDropDown">
+                                {{#each languageSelect}}
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" id="{{code}}" href="#">{{name}}, ( {{code}} )</a></li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn-group" role="group">
+
+                        <button type="button" id="addTranslation" class="btn btn-default btn-sm">Add Translation</button>
+
+                    </div>
+
+                    {{#if isTextSelected}}
+                        <div class="btn-group" role="group">
+                            <button class="btn btn-default btn-sm dropdown-toggle" type="button" id="entityDropDownForm" data-toggle="dropdown" aria-expanded="true">
+                                Save "<italic>{{selectedText.text}}</italic>" as Entity
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu entityDropDownForm" role="menu" aria-labelledby="entityDropDownForm">
+                                <form id="entityForm">
+                                    <div class="form-group">
+                                        <label for="entityName">Entity Name</label>
+                                        <input type="text" class="form-control" id="entityName" name="name" value="{{selectedText.text}}">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <textarea name="description" id="entityDescription" class="form-control" rows="3">
+
+                                        </textarea>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="check-place" name="place" value="place"> Place
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="check-ngo" name="ngo" value="ngo"> NGO
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" id="check-person" name="person" value="person"> Person
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-default">Submit</button>
+                                </form>
+                            </ul>
+                        </div>
+                    {{/if}}
+
+                    <div class="btn-group" role="group">
+
+                        <button type="button" id="deletePost" class="btn btn-danger btn-sm">Delete Post</button>
+
+                    </div>
+                </div>
+                </p>
+
+            </div>
+
+        </div>
+    {{/each}}
+</template>

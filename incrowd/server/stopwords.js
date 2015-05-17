@@ -1,4 +1,6 @@
 
+// List of stopwords for NLP methods and object to keep score
+
 stopwords = {
 
   score: function(str){
@@ -9,8 +11,6 @@ stopwords = {
     var fr = _.difference(s, stopwords.french).length / s.length;
 
     console.log(en, fr);
-
-
 
   },
 

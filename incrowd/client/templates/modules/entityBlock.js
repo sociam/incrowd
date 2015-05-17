@@ -7,9 +7,10 @@ Template.entityBlock.helpers({
 
   entityHighlightToggle: function(){
 
-    var highEnts = Session.get('highlight.entity');
+    // reactive session vars triggered when
+    // a user selects any text in a Post
 
-    //console.log(highEnts, this);
+    var highEnts = Session.get('highlight.entity');
 
     return !_.contains(highEnts, this.entity); // returns true or false
   }
@@ -21,14 +22,9 @@ Template.entityBlock.events({
 
   'click #entity-search': function(){
 
-    //var entities = Entity.find({}).fetch();
-    //console.log(entities);
-
-    //Meteor.call('entitySearch', 'Haiti', entities, function(err,res){
-    //  console.log('entitySearch',err,res);
-    //  Session.set('contentEntityMatch', res.matchContent);
-    //  Session.set('summaryEntityMatch', res.matchSummary);
-    //})
+    // button to perform an entity search
+    // This needs to be refactored to be
+    // reactive
 
     Meteor.call('entityTextSearch', Session.get('dataset'), function(err,res){
       console.log('entitySearch',err,res);
@@ -38,7 +34,10 @@ Template.entityBlock.events({
   },
 
   'click .highlight-entity': function(e){
-    e.preventDefault();
+
+    // fires when a user highlights text in a post
+
+    e.preventDefault(); // stops the universe from collapsing in on itself
 
     if(Session.get('highlight.entity') != undefined){ // check for existing highlights
 
@@ -63,11 +62,11 @@ Template.entityBlock.events({
         $('p').highlight(this.entity);
       }
 
-    } else {
+    } else { // but if no filter is on..
 
-      var arr = [this.entity];
+      var arr = [this.entity]; // grab it..
 
-      Session.set('highlight.entity' , arr);
+      Session.set('highlight.entity' , arr); // then add/replace the session var
 
     }
 

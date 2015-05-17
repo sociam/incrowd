@@ -1,7 +1,9 @@
 Template.entity.helpers({
 
   entity: function(){
-    //if(!this.userId) return null;
+    // returns all entities in the collection
+    // reactive so updates automatically when called in the
+    // HTML template file
     return Entity.find({});
   }
 
@@ -10,7 +12,21 @@ Template.entity.helpers({
 
 Template.entity.events({
 
+  'click #deleteEntity': function(){
+
+    Meteor.call('deleteEntity', this, function(err,res){
+      if(err){
+        return err
+      } else {
+        return res
+      }
+    });
+
+  },
+
   'submit form': function(e){
+
+    // submit method for the entity form on the entity admin page
 
     e.preventDefault();
 
@@ -29,11 +45,13 @@ Template.entity.events({
        console.log(err,res)
       });
 
+      $('#entityForm').trigger("reset");
+
     } else {
       console.error('Cannot submit new Entity without a NAME')
     }
 
-  }, // submit form
+  }, // submit form end
 
   'click #entity-search': function(){
 
@@ -47,7 +65,10 @@ Template.entity.events({
   },
 
   'click #entityEdit': function(){
-    console.log(this, _.contains(this.categories, "place"));
+
+    // each entity in the list has an edit button next to the title
+    // this method links to the edit button, resets the entity form
+    // and inserts all the Entity data in the form to be edited
 
     $('#entityForm').trigger("reset");
 

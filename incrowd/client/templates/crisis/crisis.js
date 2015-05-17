@@ -1,5 +1,5 @@
 
-Template.haiti.helpers({
+Template.crisisPage.helpers({
 
   dataFind: function(){
 
@@ -24,11 +24,14 @@ Template.haiti.helpers({
 
   timeColumnChart : function(){
 
+    // Highcharts Meteor package requires allows
+    //
+
     var chartData = [];
 
-    var haiti = Haiti.find({}).fetch();
+    var posts = Posts.find({}).fetch();
 
-    var grouped = _.chain(haiti)
+    var grouped = _.chain(posts)
       .countBy(function(d){return moment(d.createdAt).format("YYYY-MM-DD hh")})
       .value();
 
@@ -84,7 +87,7 @@ Template.haiti.helpers({
 
 });
 
-Template.haiti.events({
+Template.crisisPage.events({
   'click #getLanguages': function(){
 
     Meteor.call('detectLanguage', function(err, res){

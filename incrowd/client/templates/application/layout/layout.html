@@ -32,6 +32,14 @@
                             <!--<li><a href="#">One more separated link</a></li>-->
                         </ul>
                     </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Select Crisis <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {{#each crisis}}
+                                <li><a href="{{pathFor 'crisisPage'}}">{{name}}</a></li>
+                            {{/each}}
+                        </ul>
+                    </li>
                 </ul>
 
                 <ul class="nav navbar-nav navbar-right">

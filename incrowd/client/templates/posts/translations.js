@@ -18,7 +18,7 @@ Template.translations.helpers({
 
   isEditable: function(){
 
-    console.log('this.editable',this.editable);
+    //console.log('this.editable',this.editable);
 
     return this.editable;
 

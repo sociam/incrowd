@@ -24,6 +24,9 @@ Template.allPosts.helpers({
 
   timeColumnChart : function(){
 
+    // Highcharts Meteor package requires allows
+    //
+
     var chartData = [];
 
     var posts = Posts.find({}).fetch();
