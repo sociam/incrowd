@@ -13,10 +13,10 @@
     <!--</h3>-->
 
     <div class="post">
+        <h3>{{#with config}} {{config.name}} {{/with}}</h3>
         <h4> FILTERS : {{timeFilter}} </h4>
         <h6> <button type="button" class="btn btn-info btn-xs" id="clearAllFilters"> Clear All Filters </button> </h6>
     </div>
-
 
     {{#each postItems}}
         <div class="post">

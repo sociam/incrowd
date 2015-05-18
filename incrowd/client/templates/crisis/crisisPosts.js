@@ -1,9 +1,11 @@
 Template.crisisPosts.helpers({
 
   timeFilter: function(){
-
     return Session.get('filter.time');
+  },
 
+  config: function(){
+    return Session.get('crisisConfig');
   },
 
   isLang: function(){
