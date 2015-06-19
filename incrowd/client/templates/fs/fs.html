@@ -1,0 +1,41 @@
+<template name="fs">
+
+    <a id="loadFile" class="btn btn-info btn-sm"> Load Haiti Text </a>
+
+    {{tokens}}
+
+    <a id="removeStopWords" data-lang="english" class="btn btn-info btn-sm"> Remove English Stop-Words </a>
+
+    <a id="wordFreq" class="btn btn-info btn-sm"> Get Word Frequencies </a>
+
+    <a id="toCSV" class="btn btn-info btn-sm"> Convert to CSV </a>
+
+    <a id="saveCsv" class="btn btn-info btn-sm"> save CSV File </a>
+
+    <br/><br/>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a id="d3Csv" class="btn btn-info btn-sm"> D3 CSV Haiti </a>
+            Load Haiti.csv from the public folder using d3.csv()
+        </li>
+        <li class="list-group-item">
+            <a id="importCsv" class="btn btn-info btn-sm"> Import Haiti to Mongo</a>
+
+        </li>
+        <li class="list-group-item">
+            <a id="langScore" class="btn btn-info btn-sm"> Language Scorer </a>
+            Score the Languages from the CSV
+        </li>
+        <li class="list-group-item">
+            <a id="saveD3Csv" class="btn btn-info btn-sm"> Save D3-CSV as CSV </a>
+            Save the D3-CSV as a file
+        </li>
+        <li class="list-group-item">
+            <a id="findEntities" class="btn btn-info btn-sm"> Run Entity Test </a>
+
+        </li>
+        <li class="list-group-item">Vestibulum at eros</li>
+    </ul>
+
+</template>

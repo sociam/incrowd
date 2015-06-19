@@ -1,0 +1,9 @@
+{
+  "schedule": {
+
+  },
+
+  "update_frequency": "day",
+
+  "only_latest": true
+}

@@ -1,0 +1,105 @@
+<template name="crisisAdmin">
+
+    <h4> Define New Crisis </h4>
+
+    <div class="row" >
+        <div class="post col-md-4" id="left">
+            <form id="defineNewCrisis">
+                <div class="form-group col-md-12">
+                    <label for="entityName">Crisis Title</label>
+                    <input type="text" class="form-control" id="entityName" name="name" placeholder="Enter Crisis Title">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label for="startDate">Start Date</label>
+                    <input type="text" name="startDate" class="form-control" id="startDate">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label for="endDate">End Date</label>
+                    <input type="text" name="endDate" class="form-control" id="endDate">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="tagList">Tags <small>(use commas e.g. syria, water, help )</small></label>
+                    <input type="text" class="form-control" id="tagList" name="tagList" placeholder="Enter Tags">
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label for="crisis-langs">Select Languages <small> some helpful text here </small></label>
+                    {{#each languageSelect}}
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="langCheck-{{code}}" class="languageCheckBox"
+                                       name="{{name}}" value="{{code}}"> {{name}} ( {{code}} )
+                            </label>
+                        </div>
+
+                    {{/each}}
+                </div>
+
+                <div class="form-group col-md-12">
+                    <input class="form-control" id="disabledInput" type="text" placeholder="{{entityArray}}" disabled>
+                    <br/>
+                    <input class="form-control typeahead" name="entitySearch" type="text"
+                           placeholder="Enter Entities"
+                           autocomplete="off" spellcheck="off"
+                           data-source="entity" data-selected="selected">
+                    <br/><br/>
+                    <a id="addEntity" class="btn btn-info btn-sm"> Add Entity </a>
+                    <a id="removeEntity" class="btn btn-warning btn-sm"> Remove Entity </a>
+                </div>
+
+                <div class="form-group col-md-5">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-md-8" id="right">
+            {{#each crisis}}
+                <div class="post">
+                    <div class="post-content entity-block">
+
+                        <h2 class="entity-title">
+                            <a href="#">{{name}}</a>
+                            <!--<small> <a href="#" id="entityEdit">Edit</a></small>-->
+                        </h2>
+
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>start date</td>
+                                    <td>{{start_date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>end date</td>
+                                    <td>{{end_date}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Tags</td>
+                                    <td>{{tags}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Languages</td>
+                                    <td>{{languages}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Entities</td>
+                                    <td>{{#each entities}} {{value}}, {{/each}}</td>
+                                </tr>
+                                <tr>
+                                    <td><a id="deleteCrisis" class="btn btn-warning btn-xs"> Delete Crisis </a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+            {{/each}}
+        </div> <!-- right column -->
+    </div>
+
+</template>

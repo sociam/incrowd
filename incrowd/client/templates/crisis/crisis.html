@@ -1,0 +1,25 @@
+<template name="crisisPage">
+
+    <div class="row post">
+        <div class="col-md-12">
+            {{> highchartsHelper chartId="timeColumnChart" chartWidth="100%" charHeight="100%" chartObject=timeColumnChart}}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4" id="left">
+            <div class="post">
+                {{>entityBlock}}
+            </div>
+
+            <div class="post">
+                {{>crisisLangDist}}
+            </div>
+        </div> <!-- left column -->
+
+        <div class="col-md-8" id="right">
+            {{>crisisPosts}}
+        </div> <!-- right column -->
+    </div>
+
+</template>

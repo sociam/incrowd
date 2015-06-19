@@ -1,2 +1,10 @@
 .meteor/local
 .meteor/meteorite
+
+incrowd/private/apiCredentials.js
+
+incrowd/server/kadira.js
+
+incrowd/private/apiCredentials.json
+
+incrowd/.meteor/packages

@@ -1,0 +1,30 @@
+<template name="entityBlock">
+    <h3>Entities</h3>
+    <p><a id="entity-search" class="btn btn-info btn-sm"> Search All Haiti for Entities </a></p>
+
+    {{#each contentMatch}}
+        <div class="list-group">
+            <h4 class="list-group-item-heading"> {{entity}}: <small> {{count}} </small> </h4>
+            <p class="list-group-item-text">
+                <a href="#" class="highlight-entity" id="{{name}}">
+                    {{#if entityHighlightToggle}}
+                        Add Highlight
+                    {{else}}
+                        Remove Highlight
+                    {{/if}}
+
+                </a>
+            </p>
+        </div>
+    {{/each}}
+
+    <!-- Place holder for dynamic searching of entities in loaded posts -->
+    <!--<form id="entityBlockForm">-->
+
+        <!--<div class="form-group">-->
+            <!--<label for="{{entity}}">Entity Name</label>-->
+            <!--<input type="text" class="form-control" id="{{entity}}" name="name" placeholder="Enter entity name">-->
+        <!--</div>-->
+
+    <!--</form>-->
+</template>

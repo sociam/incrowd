@@ -1,0 +1,57 @@
+<!-- ... / api / setup -->
+
+<template name="apiAdmin">
+    <div class="row" >
+        <h3> Setup APIs </h3>
+
+        <div class="post col-md-8">
+            <h5> Stat / Stop API Calls to Crisis.net </h5>
+            <p> There are {{postCount}} Posts in the database</p>
+
+            {{#if switch}}
+                <a id="crisisnet-api-stateFalse" class="btn btn-danger btn-sm"> Stop API Calls </a>
+            {{else}}
+                <a id="crisisnet-api-stateTrue" class="btn btn-info btn-sm"> Start API Calls </a>
+            {{/if}}
+
+        </div>
+       <!---->
+        <!--<div class="post col-md-8">-->
+            <!--<h5> Restart the Crisis.net API search </h5>-->
+            <!--<a id="crisisnet-restart-api" class="btn btn-info btn-sm"> Restart Crisis.net API Search </a>-->
+        <!--</div>-->
+
+        <div class="col-md-8" id="right">
+            {{#if res}}
+                <div class="post">
+                    <div class="post-content entity-block">
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <td> Total Posts </td>
+                                    <td> Posts Examined </td>
+                                    <td> Duplicate Posts </td>
+                                    <td> New Posts </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    {{#if resData}}
+                                    <td>{{resData.total}}</td>
+                                    <td>{{resData.counter}}</td>
+                                    <td>{{resData.duplicateCount}}</td>
+                                    <td>{{resData.newCount}}</td>
+                                    {{/if}}
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+
+                    </div>
+                </div>
+            {{/if}}
+        </div> <!-- right column -->
+    </div>
+</template>

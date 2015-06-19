@@ -1,0 +1,23 @@
+<template name="langDist">
+    <h3> Languages </h3>
+    {{#each languages}}
+        <div class="list-group">
+                <h4 class="list-group-item-heading"> {{name}}: {{value}} </h4>
+                <p class="list-group-item-text">
+                    <a href="#" class="filter-language" id="{{name}}">
+                        {{#if filterToggle}}
+                            Add to Filter
+                        {{else}}
+                            Remove Filter
+                        {{/if}}
+
+                    </a>
+                </p>
+        </div>
+    {{/each}}
+
+
+
+    <!--{{>highchartsHelper chartId="topGenresChart" chartWidth="100%" charHeight="100%" chartObject=topGenresChart}}-->
+
+</template>
