@@ -9,8 +9,7 @@ Add a new file to the private folder:
 
 Add this code to the apiCredentials.js file:
 
-apiCredentials  = {
-  crisisnet: {
-    key: "ENTER YOUR KEY FROM CRISIS.NET HERE"
-  }
-};
+```
+{
+  "key": "YOUR_CRISIS_NET_KEY_HERE"
+}
